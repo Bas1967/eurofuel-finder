@@ -2,7 +2,7 @@ const API="https://www.fuel-prices.eu/live/api.php?action=summary";
 const names={AD:"Andorra",AT:"Oostenrijk",BE:"België",BG:"Bulgarije",CH:"Zwitserland",CY:"Cyprus",CZ:"Tsjechië",DE:"Duitsland",DK:"Denemarken",EE:"Estland",ES:"Spanje",FI:"Finland",FR:"Frankrijk",GB:"Verenigd Koninkrijk",GR:"Griekenland",HR:"Kroatië",HU:"Hongarije",IE:"Ierland",IS:"IJsland",IT:"Italië",LT:"Litouwen",LU:"Luxemburg",LV:"Letland",MT:"Malta",NL:"Nederland",NO:"Noorwegen",PL:"Polen",PT:"Portugal",RO:"Roemenië",SE:"Zweden",SI:"Slovenië",SK:"Slowakije"};
 const $=id=>document.getElementById(id);let records=[];let installPrompt=null;
 const fuelNames={sp95:"Benzine Euro 95",sp98:"Benzine Euro 98",diesel:"Diesel",gpl:"LPG",e10:"Benzine E10",e5:"Benzine E5",e85:"E85",cng:"CNG",lng:"LNG",hvo:"HVO"};
-const EUROPE=new Set(["AD","AT","BE","BG","CH","CY","CZ","DE","DK","EE","ES","FI","FR","GB","GR","HR","HU","IE","IS","IT","LI","LT","LU","LV","MC","MD","ME","MK","MT","NL","NO","PL","PT","RO","RS","SE","SI","SK","SM","TR","UA","VA"]);
+const EUROPE=new Set(const EUROPE=new Set(["NL","BE","DE"]);
 function euro(v){return new Intl.NumberFormat("nl-NL",{style:"currency",currency:"EUR",minimumFractionDigits:3,maximumFractionDigits:3}).format(v)}
 function render(){
  const fuel=$("fuel").value, sort=$("sort").value;
