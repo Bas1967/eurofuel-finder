@@ -1,0 +1,19 @@
+{
+  "name": "EuroFuel Finder",
+  "short_name": "EuroFuel",
+  "description": "Vergelijk brandstofprijzen in Europa",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0c1713",
+  "theme_color": "#10251e",
+  "lang": "nl",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
