@@ -1,0 +1,6 @@
+{
+  "appId": "nl.eurofuelfinder.app",
+  "appName": "EuroFuel Finder",
+  "webDir": "www",
+  "bundledWebRuntime": false
+}
